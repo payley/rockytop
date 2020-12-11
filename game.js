@@ -3,5 +3,5 @@ function test(){
     var p = document.getElementById("players").value;
     var r = document.getElementById("rounds").value;
 }
-document.getElementById("Players").innerHTML = p;
-document.getElementById("Rounds").innerHTML = r;
+document.getElementById("value1").innerHTML = p;
+document.getElementById("value2").innerHTML = r;
