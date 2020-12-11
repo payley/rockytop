@@ -11,15 +11,31 @@
     <h3>Number of Rounds?</h2>
     <input type="text" id="rounds"=></input>
     <br/>
-    <button onclick="test()">Submit</button>
-    <p id="value1"></p>
-    <p id="value2"></p>
+    <button onclick="start()">Submit</button>
+    <p id="value1">Players</p>
+    <p id="value2">Rounds</p>
     <!-- Script to use innerHTML -->
     <script> 
         document.getElementById("value1").innerHTML 
                 = p; 
         document.getElementById("value2").innerHTML 
                 = r; 
+    </script> 
+    <br/>
+    <button onclick="gameon()">Climb On</button>
+    <p id="player1">Player 1 Score</p>
+    <p id="player2">Player 2 Score</p>
+    <p id="player3">Player 3 Score</p>
+    <p id="player4">Player 4 Score</p>
+    <script> 
+        document.getElementById("player1").innerHTML 
+                = p1; 
+        document.getElementById("player2").innerHTML 
+                = p2; 
+        document.getElementById("player1").innerHTML 
+                = p3; 
+        document.getElementById("player2").innerHTML 
+                = p4; 
     </script> 
   </body>
 </html>
