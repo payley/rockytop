@@ -4,4 +4,4 @@ function test(){
     var r = document.getElementById("rounds").value;
 }
 document.getElementById("Players").innerHTML = p;
-document.getElementById("Rounds").innerHTML = p;
+document.getElementById("Rounds").innerHTML = r;
