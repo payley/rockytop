@@ -4,5 +4,4 @@ function start(){
     var r = document.getElementById("rounds").value;
     document.getElementById("value1").innerHTML = p; 
     document.getElementById("value2").innerHTML = r;
-    document.getElementById("p1").style.display = "block";
 }
