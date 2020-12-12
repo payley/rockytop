@@ -4,8 +4,7 @@ function start(){
     var r = document.getElementById("rounds").value;
     document.getElementById("value1").innerHTML = p;
     document.getElementById("value2").innerHTML = r;
-    var num = p + 1;
-    for (var i = 1; i < num; i++){
+    for (var i = 1; i <= p; i++){
     var idx = "P" + i
     document.getElementById(idx).innerHTML = "Player_" + i;
 }
