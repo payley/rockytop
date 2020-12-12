@@ -6,6 +6,6 @@ function start(){
     document.getElementById("value2").innerHTML = r;
     for (var i = 1; i == p; i++){
     var idx = document.getElementById("P" + i)
-    idx.style.display = 'block';
+    idx.style.display = 'none';
 }
 }    
