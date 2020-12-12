@@ -5,7 +5,8 @@ function start(){
     document.getElementById("value1").innerHTML = p;
     document.getElementById("value2").innerHTML = r;
     for (var i = 1; i == p; i++){
-    var idx = document.getElementById("P" + i)
-    idx.innerHTML = "Player" + i;
+    var idx = "P" + i
+    alert idx;
+    document.getElementById(idx).innerHTML = idx;
 }
 }    
