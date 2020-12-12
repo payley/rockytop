@@ -6,7 +6,6 @@ function start(){
     document.getElementById("value2").innerHTML = r;
     for (var i = 1; i == p; i++){
     var idx = "P" + i
-    alert idx;
-    document.getElementById(idx).innerHTML = idx;
+    document.getElementById(idx).innerHTML = "Player_" + i;
 }
 }    
