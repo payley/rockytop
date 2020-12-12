@@ -1,5 +1,4 @@
 document.getElementById('date').innerHTML = new Date().toDateString();
-document.getElementById("P1").style.display = 'block';
 function start(){
     var p = document.getElementById("players").value;
     var r = document.getElementById("rounds").value;
