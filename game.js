@@ -4,9 +4,9 @@ function start(){
     var r = document.getElementById("rounds").value;
     document.getElementById("value1").innerHTML = p;
     document.getElementById("value2").innerHTML = r;
-    
+    document.getElementById("P1").style.display = 'block';
     for (var i = 1; i == p; i++){
-    var idx = document.getElementById("p" + i)
+    var idx = document.getElementById("P" + i)
     idx.style.display = 'block';
 }
 }    
