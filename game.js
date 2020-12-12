@@ -9,3 +9,4 @@ function start(){
     var idx = document.getElementById("p" + i)
     idx.style.display = 'block';
 }
+}    
