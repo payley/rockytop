@@ -4,8 +4,10 @@ function start(){
     var r = document.getElementById("rounds").value;
     document.getElementById("value1").innerHTML = p;
 }
+function run(){
     for (var i = 0; i < p; i++){
-       var idx = document.getElementById("P" + i)
-       idx.innerHTML = "Player_" + i;
+        var idx = document.getElementById("P" + i)
+        idx.innerHTML = "Player_" + i;
+        document.getElementById("value2").innerHTML = i;
 }
-document.getElementById("value2").innerHTML = i;
+
