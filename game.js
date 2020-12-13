@@ -10,7 +10,7 @@ function run(){
         idx.innerHTML = "Player_" + i;
         document.getElementById("value2").innerHTML = i;
 }
-players.addEventListener("click", myFunction);
+document.getElementById("players").addEventListener("click", myFunction);
 
 function myFunction() {
   alert ("Hello World!");
