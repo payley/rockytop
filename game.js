@@ -6,9 +6,11 @@ function start(){
 }
 function run(){
     var num = p + 1;
+    var i = 0;
     for (var i = 1; i < p; i++){
         var idx = document.getElementById("P" + i);
         idx.innerHTML = "Player_" + i;
         document.getElementById("value2").innerHTML = i;
 }
+        document.getElementById("value2").innerHTML = i;
 }
