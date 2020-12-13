@@ -11,3 +11,4 @@ function run(){
         idx.innerHTML = "Player_" + i;
         document.getElementById("value2").innerHTML = i;
 }
+}
