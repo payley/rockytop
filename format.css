@@ -1,7 +1,41 @@
+form {
+  font: 18px garamond, serif;
+} 
+input[type=text] {
+  width: 8%;
+  font: 18px garamond, serif;
+  border: none;
+  border-bottom: 2px solid maroon;
+  text-align: center;
+}
+  input[type=text]:focus {
+  outline: none;
+}
+input[type=number] {
+  width: 20%;
+  font: 18px garamond, serif;
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+}
+button {
+  background: maroon;
+  border:  none;
+  padding:  10px;
+  color: #FAEBD7;
+  font: 18px garamond, serif;
+  border-radius: 3px;
+}
+button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+h1 {
+   font: 72px garamond, serif; 
+  color: #EEE8AB;
+}
+h1[class=cen] {
+  text-align: center;
+}
 span:not(.excl) {
     padding-right: 10px;
-}
-
-input {
-  width: 100%;
 }
