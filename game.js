@@ -1,4 +1,8 @@
 document.getElementById("value1").innerHTML = "&nbsp" + "1";
+var init = document.getElementsByClassName("load")
+for (var i = 0; i < init.length; i++) {
+    init[i].style.display = "none";
+}
 var p = 0;
 var r = 0;
 var turn = 1;
@@ -13,10 +17,12 @@ function start() {
     }
     for (var i = 0; i < PL.length; i++) {
         var num = i + 1;
-        var idx = document.getElementById("P" + num);
-        idx.innerHTML = "Player" + "&nbsp" + num;
-        var idx = document.getElementById("R" + num);
-        idx.innerHTML = "Round" + "&nbsp" + 0 + "/" + r;
+        var idp = document.getElementById("P" + num);
+        idp.innerHTML = "Player" + "&nbsp" + num;
+        var idr = document.getElementById("R" + num);
+        idr.innerHTML = "Round" + "&nbsp" + 0 + "/" + r;
+        var idi = document.getElementById("I" + num);
+        idi.style.display = "Block";
     }
     var turn = 1;
     document.getElementById("value1").innerHTML = "&nbsp" + turn;
