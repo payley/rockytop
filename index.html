@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <script async src="./game.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>Rockytop</h1>
     <hr>
     <h4 id='date'></h4>
     <form>
-  <label for="players">Number of Players?</label><br>
-  <input type="text" id="players" name="players"><br>
-  <label for="rounds">Number of Rounds</label><br>
-  <input type="text" id="rounds" name="rounds">
-</form>
-<button onclick="start()">Submit</button>
-<hr>
-<p id="value1"></p>
-<p id="value2"></p>
-<h1>Scoreboard</h1>
-<button onclick="run()">Start Game</button>
-<div id="P1"></div>
-<div id="P2"></div>
-<div id="P3"></div>
-<div id="P4"></div>
+        <label for="players">Number of Players? (1-6)</label><br>
+        <input type="text" id="players" name="players"><br><br>
+        <label for="rounds">Number of Rounds? (1-7)</label><br>
+        <input type="text" id="rounds" name="rounds">
+    </form>
+    <button onclick="start()" value="button1">Submit</button>
+    <hr>
+    <div>Player<span id="value1" class="excl"></span>'s turn</div>
+    <h1>Scoreboard</h1>
+    <div><span id="P1"></span><span id="R1"></span><span id="S1"></span></div>
+    <div><span id="P2"></span><span id="R2"></span><span id="S2"></span></div>
+    <div><span id="P3"></span><span id="R3"></span><span id="S3"></span></div>
+    <div><span id="P4"></span><span id="R4"></span><span id="S4"></span></div>
+    <div><span id="P5"></span><span id="R5"></span><span id="S5"></span></div>
+    <div><span id="P6"></span><span id="R6"></span><span id="S6"></span></div>
+    <button onclick="next()" value="button2">Done</button>
+
 </body>
+
 </html>
