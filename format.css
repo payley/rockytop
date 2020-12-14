@@ -2,6 +2,6 @@ span:not(.excl) {
     padding-right: 10px;
 }
 
-body {
-  background-color: lightblue;
+input {
+  width: 100%;
 }
