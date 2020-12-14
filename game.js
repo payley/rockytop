@@ -10,6 +10,9 @@ var turn = 1;
 var prev = 0;
 var pk = [14, 15, 16, 19, 20, 22, 29];
 var rnd = [0];
+var score = 0;
+var val = 0;
+var sc = 0;
 
 function start() {
     p = document.getElementById("players").value;
@@ -35,26 +38,45 @@ function start() {
 }
 
 function next() {
-    sc = document.getElementById("input" + turn).value;
-    prev = document.getElementById("S" + turn).innerHTML
-    var idt = turn - 1;
-    var ref = (rnd[idt]) - 1;
-    var score = document.getElementById("S" + turn).innerHTML;
-    if (sc > pk[ref]) {
-        score = prev + sc;
-    } else if (sc < pk[ref]) {
-        score = prev - sc;
-    } else {
+    var val = parseFloat(document.getElementById("input" + turn).value);
+    var sc = parseFloat(document.getElementById("S" + turn).innerHTML);
+    var abs = turn - 1;
+    var ref = (rnd[abs]) - 1;
+    if (val > pk[ref]) {
+        score = sc + (val - pk[ref]);
+        document.getElementById("S" + turn).innerHTML = score; 
+        if (score == pk[ref]) {
+            rnd[abs] = rnd[abs] + 1;
+            document.getElementById("S" + turn).innerHTML = 0;
+            document.getElementById("R" + turn).innerHTML = "Round" + "&nbsp" + rnd[abs] + "/" + r;
+        } else if (score > pk[ref]) {
+          document.getElementById("S" + turn).innerHTML = 0;
+        }
+    } else if (val < pk[ref]) {
+        score = sc + val;
+        document.getElementById("S" + turn).innerHTML = score;
+        if (score == pk[ref]) {
+            rnd[abs] = rnd[abs] + 1;
+            document.getElementById("S" + turn).innerHTML = 0;
+            document.getElementById("R" + turn).innerHTML = "Round" + "&nbsp" + rnd[abs] + "/" + r;
+        } else if (score > pk[ref]) {
+          document.getElementById("S" + turn).innerHTML = 0;
+        }
+    } else if (val = pk[ref]) {
         score = 0;
-    }
-    if (score == 0) {
-        rnd[idt] = rnd[idt] + 1;
-        document.getElementById("R" + turn).innerHTML = "Round" + "&nbsp" + rnd[idt] + "/" + r;
+        document.getElementById("S" + turn).innerHTML = score;
+        rnd[abs] = rnd[abs] + 1;
+        document.getElementById("R" + turn).innerHTML = "Round" + "&nbsp" + rnd[abs] + "/" + r;
     }
     document.getElementById("input" + turn).value = "";
     turn = turn + 1;
     if (turn > p) {
         turn = 1;
     }
-    document.getElementById("value1").innerHTML = "&nbsp" + turn;
+  if(rnd[abs] > r){
+      document.getElementById("value2").innerHTML = "Player" + "&nbsp" + turn + "&nbsp" + "wins!";
+      document.getElementById("R" + (turn - 1)).innerHTML = "Round" + "&nbsp" + r + "/" + r;
+  } else {
+      document.getElementById("value1").innerHTML = "&nbsp" + turn;
+  }
 }
