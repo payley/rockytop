@@ -74,7 +74,7 @@ function next() {
         turn = 1;
     }
   if(rnd[abs] > r){
-      document.getElementById("value2").innerHTML = "Player" + "&nbsp" + turn + "&nbsp" + "wins!";
+      document.getElementById("value2").innerHTML = "Player" + "&nbsp" + (turn - 1) + "&nbsp" + "wins!";
       document.getElementById("R" + (turn - 1)).innerHTML = "Round" + "&nbsp" + r + "/" + r;
   } else {
       document.getElementById("value1").innerHTML = "&nbsp" + turn;
