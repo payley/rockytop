@@ -15,11 +15,11 @@ function start() {
     p = document.getElementById("players").value;
     r = document.getElementById("rounds").value;
     var PL = new Array(p);
-    rnd = Array(p);
+    rnd = new Array(p);
     for (var i = 0; i < p; i++) {
         var num = i + 1;
         PL[i] = "Player" + '&nbsp' + num;
-        rnd[num] = 1;
+        rnd[i] = 1;
     }
     for (var i = 0; i < PL.length; i++) {
         var num = i + 1;
@@ -28,7 +28,7 @@ function start() {
         var idr = document.getElementById("S" + num);
         idr.innerHTML = 0;
         var idr = document.getElementById("R" + num);
-        idr.innerHTML = "Round" + "&nbsp" + rnd[num] + "/" + r;
+        idr.innerHTML = "Round" + "&nbsp" + rnd[i] + "/" + r;
         var idi = document.getElementById("I" + num);
         idi.style.display = "Block";
     }
@@ -36,16 +36,20 @@ function start() {
 
 function next() {
     sc = document.getElementById("input" + turn).value;
-    prev = document.getElementById("S" + turn).innerHTML;
-    var ref = rnd[turn];
+    prev = document.getElementById("S" + turn).innerHTML
+    var idt = turn - 1;
+    var ref = (rnd[idt]) - 1;
+    var score = document.getElementById("S" + turn).innerHTML;
     if (sc > pk[ref]) {
-        document.getElementById("S" + turn).innerHTML = prev + sc;
+        score = prev + sc;
     } else if (sc < pk[ref]) {
-        document.getElementById("S" + turn).innerHTML = prev - sc;
+        score = prev - sc;
     } else {
-        document.getElementById("S" + turn).innerHTML = 0;
-        rnd[turn] = ref + 1;
-        document.getElementById("R" + turn).innerHTML = "Round" + "&nbsp" + rnd[turn] + "/" + r;
+        score = 0;
+    }
+    if (score == 0) {
+        rnd[idt] = rnd[idt] + 1;
+        document.getElementById("R" + turn).innerHTML = "Round" + "&nbsp" + rnd[idt] + "/" + r;
     }
     document.getElementById("input" + turn).value = "";
     turn = turn + 1;
