@@ -3,29 +3,27 @@
 
 <head>
     <script async src="./game.js"></script>
+    <link rel="stylesheet" href="format.css">
 </head>
 
 <body>
-    <h1>Rockytop</h1>
-    <hr>
-    <h4 id='date'></h4>
+    <h1 class="left">Rockytop</h1>
     <form>
-        <label for="players">Number of Players? (1-6)</label><br>
-        <input type="text" id="players" name="players"><br><br>
-        <label for="rounds">Number of Rounds? (1-7)</label><br>
+      <label for="players">Number of Players? (1-6) :</label>
+      <input type="text" id="players" name="players"><br><br>
+      <label for="rounds">Number of Rounds? (1-7) :</label>
         <input type="text" id="rounds" name="rounds">
     </form>
     <button onclick="start()" value="button1">Submit</button>
-    <hr>
     <div>Player<span id="value1" class="excl"></span>'s turn</div>
-    <div><span id="value2"></span></div>
-    <h1>Scoreboard</h1>
-    <div><span id="P1"></span><span id="R1"></span><span id="S1"></span><span id="I1" class="load"><input type="text" id="input1"></span></div>
-    <div><span id="P2"></span><span id="R2"></span><span id="S2"></span><span id="I2" class="load"><input type="text" id="input2"></span></div>
-    <div><span id="P3"></span><span id="R3"></span><span id="S3"></span><span id="I3" class="load"><input type="text" id="input3"></span></div>
-    <div><span id="P4"></span><span id="R4"></span><span id="S4"></span><span id="I4" class="load"><input type="text" id="input4"></span></div>
-    <div><span id="P5"></span><span id="R5"></span><span id="S5"></span><span id="I5" class="load"><input type="text" id="input5"> </span></div>
-    <div><span id="P6"></span><span id="R6"></span><span id="S6"></span><span id="I6" class="load"><input type="text" id="input6"></span></div>
+    <div><span id="value2" class="excl"></span></div>
+  <h1 class="cen">Scoreboard</h1>
+    <div><span id="P1"></span><span id="R1"></span><span id="S1"></span><span id="I1" class="load"><input type="number" id="input1"></span></div>
+    <div><span id="P2"></span><span id="R2"></span><span id="S2"></span><span id="I2" class="load"><input type="number" id="input2"></span></div>
+    <div><span id="P3"></span><span id="R3"></span><span id="S3"></span><span id="I3" class="load"><input type="number" id="input3"></span></div>
+    <div><span id="P4"></span><span id="R4"></span><span id="S4"></span><span id="I4" class="load"><input type="number" id="input4"></span></div>
+    <div><span id="P5"></span><span id="R5"></span><span id="S5"></span><span id="I5" class="load"><input type="number" id="input5"></span></div>
+    <div><span id="P6"></span><span id="R6"></span><span id="S6"></span><span id="I6" class="load"><input type="number" id="input6"></span></div>
     <button onclick="next()" value="button2">Done</button>
 
 </body>
