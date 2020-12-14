@@ -47,7 +47,6 @@ function next() {
         rnd[turn] = ref + 1;
         document.getElementById("R" + turn).innerHTML = "Round" + "&nbsp" + rnd[turn] + "/" + r;
     }
-    document.getElementById("S" + turn).innerHTML = sc;
     document.getElementById("input" + turn).value = "";
     turn = turn + 1;
     if (turn > p) {
