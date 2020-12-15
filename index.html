@@ -7,17 +7,24 @@
 </head>
 
 <body>
-    <img src="rockytop.png" class="top-left">
-    <img src="mt.png" class="top-right">
-    <div id="start"><form>
-      <label for="players">Number of Players? (1-6) :</label>
-      <input type="text" id="players" name="players"><br><br>
-      <label for="rounds">Number of Rounds? (1-7) :</label>
-        <input type="text" id="rounds" name="rounds">
-        </form>
-    <button onclick="start()" id="button1">Submit</button></div>
+    
+    <img src="rockytop.png">
+    
+    <div>
+        <img src="mt.png" class="bottom-right">
+        <div id="start"><form>
+            <label for="players">Number of Players? (1-6) :</label>
+            <input type="text" id="players" name="players"><br><br>
+            <label for="rounds">Number of Rounds? (1-7) :</label>
+            <input type="text" id="rounds" name="rounds">
+            </form><br> 
+            <button onclick="start()" id="button1">Submit</button>
+        </div>
+    </div>
+    
     <div>Player<span id="value1" class="excl"></span>'s turn</div>
-        <div><span id="value2" class="excl"></span></div>
+    <div><span id="value2" class="excl"></span></div>
+    
   <h1 class="cen">Scoreboard</h1>
     
     <div><span id="P1"></span><span id="R1"></span><span id="S1"></span><span id="I1" class="load"><input type="number" id="input1"></span></div>
