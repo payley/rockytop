@@ -39,3 +39,10 @@ h1[class=cen] {
 span:not(.excl) {
     padding-right: 10px;
 }
+footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+}
