@@ -64,7 +64,9 @@ span:not(.excl) {
 .bottom-right {
   position: relative;
   top: 100px;
-  right: 0px;
+  left: 0px;
+  width: 66%;
+  height: auto;
 }
 .top-left {
   position: absolute;
