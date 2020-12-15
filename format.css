@@ -47,9 +47,8 @@ button {
   color: black;
 }
 #start {
-  position: absolute;
-  top: 250px;
-  left: 46px;
+  position: relative;
+  top: 50px;
 }
 h1 {
    font: 72px garamond, serif; 
@@ -63,7 +62,7 @@ span:not(.excl) {
 }
 .bottom-right {
   position: relative;
-  top: 250px;
+  top: 400px;
   width: 66%;
   height: auto;
 }
