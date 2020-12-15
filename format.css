@@ -34,6 +34,7 @@ input[type=number] {
   padding:  10px;
   color: #FAEBD7;
   font: 36px aharoni, sans-serif;
+  letter-spacing: 3px;
   border-radius: 3px;
   position: relative;
   top: 50%;
