@@ -61,9 +61,9 @@ h1 {
 span:not(.excl) {
     padding-right: 10px;
 }
-.bottom-right {
+.top-right {
   position: relative;
-  bottom: 0;
+  top: 20px;
   right: 20px;
 }
 .footer {
