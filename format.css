@@ -40,6 +40,9 @@ input[type=number] {
   top: 50%;
   left: 50%;
 }
+#button2:hover {
+  color: black;
+}
 #start {
   position: absolute;
   top: 500px;
