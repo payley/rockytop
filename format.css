@@ -61,8 +61,8 @@ span:not(.excl) {
     padding-right: 10px;
 }
 .bottom-right {
-  position: relative;
-  top: 400px;
+  position: absolute;
+  top: 50%;
   width: 66%;
   height: auto;
 }
