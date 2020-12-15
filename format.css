@@ -50,6 +50,7 @@ button {
   position: absolute;
   top: 5%;
   right: 5%;
+  background-color: blue;
 }
 h1 {
    font: 72px garamond, serif; 
