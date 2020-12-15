@@ -1,6 +1,11 @@
 form {
-  font: 18px garamond, serif;
+  font: 18px arial, sans-serif;
 } 
+@media only screen and (min-width: 480px) {
+  form {
+    font: 24px tw cen mt, sans-serif;
+  }
+}
 input[type=text] {
   width: 8%;
   font: 18px garamond, serif;
