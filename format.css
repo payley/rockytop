@@ -51,6 +51,7 @@ span:not(.excl) {
     padding-right: 10px;
 }
 .footer {
+  background: maroon;
   bottom: 0;
   left: 0;
   right: 0;
