@@ -48,8 +48,8 @@ button {
 }
 #start {
   position: absolute;
-  top: 10%;
-  left: 25%;
+  top: 200px;
+  left: 400px;
 }
 h1 {
    font: 72px garamond, serif; 
