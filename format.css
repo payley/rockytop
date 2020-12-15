@@ -65,8 +65,8 @@ button {
 @media only screen and (min-width: 480px) {
   .start {
     font: 18px helvetica, sans-serif;
-    top: 20%;
-    right: 5%;
+    top: 10%;
+    right: 7%;
   }
 }
 h1 {
@@ -92,7 +92,7 @@ span:not(.excl) {
   max-width: 100%;
 }
 .footer {
-  background: violet;
+  background: maroon;
   bottom: 0;
   left: 0;
   right: 0;
