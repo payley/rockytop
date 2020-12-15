@@ -61,6 +61,11 @@ h1 {
 span:not(.excl) {
     padding-right: 10px;
 }
+.bottom-right {
+  position: relative;
+  bottom: 0;
+  right: 20px;
+}
 .footer {
   background: maroon;
   bottom: 0;
