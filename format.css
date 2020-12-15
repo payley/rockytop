@@ -1,11 +1,3 @@
-form {
-  font: 18px arial, sans-serif;
-} 
-@media only screen and (min-width: 480px) {
-  form {
-    font: 24px tw cen mt, sans-serif;
-  }
-}
 input[type=text] {
   width: 8%;
   font: 18px garamond, serif;
@@ -56,6 +48,12 @@ button {
   top: 5%;
   right: 5%;
   text-align: right;
+  font: 16px helvetica, sans-serif;
+}
+@media only screen and (min-width: 480px) {
+  start {
+    font: 32px helvetica, sans-serif;
+  }
 }
 h1 {
    font: 72px garamond, serif; 
