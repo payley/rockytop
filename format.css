@@ -45,8 +45,8 @@ input[type=number] {
 }
 #start {
   position: absolute;
-  top: 500px;
-  left: 500px;
+  top: 10%;
+  left: 25%;
 }
 h1 {
    font: 72px garamond, serif; 
