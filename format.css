@@ -63,7 +63,7 @@ span:not(.excl) {
 }
 .bottom-right {
   position: absolute;
-  top: 20%;
+  top: 200px;
   width: 66%;
   height: auto;
 }
