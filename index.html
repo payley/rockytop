@@ -19,37 +19,40 @@
             <button onclick="start()" id="button1">Submit</button>
         </div>
     </div>
-    <div class="back">
-    <div class="msg">Player<span id="value1" class="excl"></span>'s turn</div>
-    <div id="value2" class="msg"></div>
+
+    <div>
     <details>
         <summary class="guide"> Guidelines </summary>
-        <p><ul class="l1">
-        <li> Begin play after set-up </li><br>
-        <li> On each turn, the indicated player will get one dart </li><br>
+        <p><ol class="l1">
+        <li> Begin play after set-up </li>
+        <li> On each turn, the indicated player will get one dart </li>
         <li> Type the value of your throw into your box and hit next to input </li>
             <ul class="l2">
                 <li> A bullseye in the inner or outer ring is equal to 0 </li>
                 <li> A double point value means you get another throw </li>
                 <li> A triple point value means you get two more throws and can choose the better of the two </li>
-            </ul><br>
+            </ul>
         <li> To complete a round, you must reach its peak value </li>
             <ul class="l2">
                 <li> Each round has a corresponding mountain peak from a continent (e.g. round one is Mt. Wilhelm at 14,000+ ft
                      so you are aiming for a score of 14 </li>
-            </ul><br>
+            </ul>
         <li> A throw less than the peak value is added to your tally and your turn is over </li>
         <li> If you overshoot the peak value, your tally returns to 0 </li>
             <ul class="l2">
                 <li> On your next turn, you can get a throw that reaches the peak value and complete the round </li>
                 <li> Regardless of the tally total, a throw equal to the peak value advances you to the next round </li>
                 <li> The same is true of a bullseye in the inner or outer rings </li>
-            </ul><br>
+            </ul>
         <li> Completing all the peaks wins you the game!</li>    
-                </ul>
+                </ol>
                 <p>
                 </details>
+    </div>
     
+    <div class="back">
+    <div class="msg">Player<span id="value1" class="excl"></span>'s turn</div>
+    <div id="value2" class="msg"></div>
     <div><span id="P1"></span><span id="R1"></span><span id="S1"></span><span id="I1" class="load"><input type="number" id="input1"></span></div>
     <div><span id="P2"></span><span id="R2"></span><span id="S2"></span><span id="I2" class="load"><input type="number" id="input2"></span></div>
     <div><span id="P3"></span><span id="R3"></span><span id="S3"></span><span id="I3" class="load"><input type="number" id="input3"></span></div>
