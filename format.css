@@ -74,20 +74,12 @@ button {
     color: black;
 }
 .start {
-    font-weight: 500;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    text-align: right;
-    font: 16px;
-
-}
-@media only screen and (min-width: 480px) {
-    .start {
-      font-size: 18px;
-      top: 10%;
-      right: 7%;
-    }
+  font-weight: 500;
+  position: absolute;
+  font-size: 18px;
+  top: 10%;
+  right: 7%;
+  text-align: right;
 }
 .guide{
     font-size: 28px;
@@ -127,4 +119,11 @@ button {
     position: fixed;
     width: 100%;
     z-index: 2;
+}
+@media only screen and (max-width: 800px) {
+  .start {
+    top: 20px;
+    right: 40px;
+    font-size: 16px;
+  }
 }
