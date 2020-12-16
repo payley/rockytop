@@ -20,6 +20,7 @@ body{
 .ind>*{
   padding-right: 10%;
   float:left;
+  line-height: 20px;
 }
 .bold{
   font-weight: 700;
