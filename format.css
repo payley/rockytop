@@ -6,6 +6,21 @@ body{
   margin:0;
   padding:0;
 }
+.el{
+  position:absolute;
+  top: 200px;
+  left: 40px;
+  width: 40%;
+}
+.ind{
+  padding-bottom: 5%;
+}
+.ind>*{
+  padding-right: 5%;
+}
+.bold{
+  font-weight: 700;
+}
 .back{
   position: relative;
   background-color:lightblue;
@@ -47,7 +62,7 @@ input[type=text] {
     font-size: 18px;
 }
 input[type=number] {
-    width: 5%;
+    width: 10%;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
     font-weight: 400;
