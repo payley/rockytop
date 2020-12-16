@@ -89,7 +89,7 @@ button {
 }
 .l1{
     font-size: 18px;
-    width: 80%;
+    width: 60%;
 }
 .l2{
     font-size: 17px;
@@ -100,10 +100,10 @@ ol li{
       margin-top: 20px;
     }
 ol li.shrink{
-      width: 45%;
+      width: 70%;
     }
 ol li.shrink2{
-      width: 65%;
+      width: 90%;
     }
 ul li{
       line-height: 110%;
@@ -118,9 +118,9 @@ ul li{
     z-index: 1;
 }
 .top-left {
-    padding:  10px;
+    padding:  25px;
     width: 50%;
-    max-width: 100%;
+    max-width: 704px;
 }
 .footer {
     background: maroon;
@@ -139,5 +139,8 @@ ul li{
   }
   .guide {
     font-size: 24px;
+  }
+  details{
+    padding-left: 20px;
   }
 }
