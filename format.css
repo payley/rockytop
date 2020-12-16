@@ -64,7 +64,9 @@ button {
     top: 5%;
     right: 5%;
     text-align: right;
-    font: 16px helvetica, sans-serif;
+    font: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: light;
 }
 @media only screen and (min-width: 480px) {
     .start {
