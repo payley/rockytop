@@ -28,8 +28,8 @@ input[type=number] {
     padding: 10px;
 }
 :focus {
-border: none;
-outline: none;
+   border: none;
+   outline: none;
 }
 button {
    outline: none;
@@ -74,8 +74,9 @@ button {
     }
 }
 .guide{
-     font: 36px helvetica, sans-serif; 
+    font: 24px helvetica, sans-serif; 
     color: rgb(253, 229, 120);
+    padding-left: 10px;
 }
 .l1{
     font: 18px helvetica, sans-serif;
