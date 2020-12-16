@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Sofia');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat&effect=anaglyph');
+body{
+  font-family:"Montserrat", sans-serif;
+}
 .msg{
   position: absolute;
 }
@@ -19,12 +21,9 @@ input[type=text] {
     border-bottom: 2px solid maroon;
     text-align: center;
 }
-input[type=text]:focus {
-    outline: none;
-}
 input[type=number] {
     width: 20%;
-    font: 18px helvetica, sans-serif;
+    font-size: 18px;
     border: 1px solid black;
     text-align: center;
     padding: 10px;
@@ -41,7 +40,7 @@ button {
     border:  none;
     padding:  10px;
     color: #FAEBD7;
-    font: 20px helvetica;
+    font-size: 20px;
 }
 #button1:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
@@ -51,7 +50,7 @@ button {
     border:  none;
     padding:  10px;
     color: #FAEBD7;
-    font: 36px helvetica, sans-serif;
+    font-size: 36px;
     letter-spacing: 3px;
     border-radius: 3px;
     position: relative;
@@ -67,27 +66,25 @@ button {
     right: 5%;
     text-align: right;
     font: 16px;
-    font-family: 'Sofia', sans-serif;
 }
 @media only screen and (min-width: 480px) {
     .start {
-      font: 18px helvetica, sans-serif;
+      font-size: 18px;
       top: 10%;
       right: 7%;
     }
 }
 .guide{
-    font: 24px helvetica, sans-serif; 
-    color: #f5e98c;
+    font-size: 24px;
     font-weight: bold;
     padding-left: 20px;
 }
 .l1{
-    font-family: 'Sofia', sans-serif;
+    font-size: 18px;
     line-height: 200%;
 }
 .l2{
-    font: 16px helvetica, sans-serif;
+    font-size: 16px;
     list-style-type: square;
     line-height: 120%;
     padding-bottom: 1%;
