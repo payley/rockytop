@@ -11,10 +11,11 @@ body{
   top: 200px;
   left: 100px;
   width: 40%;
-  font-size: 16pt;
+  font-size: 20pt;
 }
 .ind{
   padding-bottom: 5%;
+  display: block;
 }
 .ind>*{
   padding-right: 10%;
