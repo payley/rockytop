@@ -9,14 +9,16 @@ body{
 .el{
   position:absolute;
   top: 200px;
-  left: 40px;
+  left: 100px;
   width: 40%;
+  font-size: 16pt;
 }
 .ind{
   padding-bottom: 5%;
 }
 .ind>*{
-  padding-right: 5%;
+  padding-right: 10%;
+  float:left;
 }
 .bold{
   font-weight: 700;
