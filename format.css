@@ -75,7 +75,8 @@ button {
 }
 .guide{
     font: 24px helvetica, sans-serif; 
-    color: rgb(253, 229, 120);
+    color: #f5e98c;
+    font-weight: bold;
     padding-left: 10px;
 }
 .l1{
