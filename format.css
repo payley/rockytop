@@ -77,10 +77,13 @@ button {
 }
 .l1{
     font: 18px helvetica, sans-serif;
-    list-style-type: none;
+    line-height: 200%;
 }
 .l2{
     font: 16px helvetica, sans-serif;
+    list-style-type: square;
+    line-height: 120%;
+    padding-bottom: 1%;
 }
 .bottom-right {
     position: absolute;
@@ -102,5 +105,6 @@ button {
     right: 0;
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
   
