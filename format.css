@@ -80,6 +80,7 @@ button {
   top: 7%;
   right: 7%;
   text-align: right;
+  z-index: 2;
 }
 .guide{
     font-size: 28px;
