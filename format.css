@@ -10,17 +10,22 @@ body{
   position:absolute;
   top: 200px;
   left: 100px;
-  width: 40%;
+  width: 50%;
+  height: auto;
   font-size: 20pt;
+  padding: 10px;
 }
-.ind{
-  padding-bottom: 5%;
-  display: block;
+.load{
+  z-index: 3;
+  padding: 10px;
+  width: 100%
 }
 .ind>*{
-  padding-right: 10%;
+  padding-right: 7%;
+  padding-left: 4%;
+  padding-top: 5%;
   float:left;
-  line-height: 20px;
+  z-index: 2;
 }
 .bold{
   font-weight: 700;
