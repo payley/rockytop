@@ -89,15 +89,26 @@ button {
 }
 .l1{
     font-size: 18px;
-    line-height: 250%;
-    width: 68%;
+    width: 80%;
 }
 .l2{
     font-size: 17px;
     list-style-type: square;
-    line-height: 120%;
-    padding-bottom: 1%;
 }
+ol li{
+      line-height: 100%;
+      margin-top: 20px;
+    }
+ol li.shrink{
+      width: 45%;
+    }
+ol li.shrink2{
+      width: 65%;
+    }
+ul li{
+      line-height: 100%;
+      margin-bottom: 0px;
+    }
 .bottom-right {
     position: absolute;
     top: 175px;
@@ -127,17 +138,6 @@ button {
     font-size: 16px;
   }
   .guide {
-    padding-top: 50px;
-  }
-  ol li{
-    line-height: 100%;
-    margin-bottom: 20px;
-    width: 70%;
-  }
-  ul li{
-    line-height: 100%;
-    margin-bottom: 0px;
-    width: 70%;
-    padding-bottom: 10px;
+    font-size: 24px;
   }
 }
