@@ -6,9 +6,6 @@ body{
   margin:0;
   padding:0;
 }
-.msg{
-  position: absolute;
-}
 .back{
   position: relative;
   background-color:lightblue;
@@ -19,6 +16,26 @@ body{
   bottom: 0;
   border: 0;
   padding-bottom: 75px;
+}
+.under{
+  width: 30%;
+  position: absolute;
+  top: 50px;
+  left: 85px;
+}
+.brace{
+  position: relative;
+  width: 100%;
+  object-fit: scale-down;
+}
+.msg{
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-align: center;
+  transform: translate(50%, -50%);
 }
 input[type=text] {
     width: 8%;
@@ -82,6 +99,9 @@ button {
   text-align: right;
   z-index: 2;
 }
+details{
+  padding-left: 20px;
+}
 .guide{
     font-size: 28px;
     font-weight: 900;
@@ -140,8 +160,5 @@ ul li{
   }
   .guide {
     font-size: 24px;
-  }
-  details{
-    padding-left: 20px;
   }
 }
