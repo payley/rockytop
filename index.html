@@ -1,70 +1,104 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+  <head>
     <script async src="./game.js"></script>
     <link rel="stylesheet" type="text/css" href="format.css">
-</head>
+  </head>
 
-<body>
+  <body>
     <div>
-        <img src="rockytop.png" class="top-left">
-        <img src="mt.png" class="bottom-right">
-                <div class="start"><form>
-            <label for="players">Number of Players? (1-6) :</label>
-            <input type="text" id="players" name="players"><br><br>
-            <label for="rounds">Number of Rounds? (1-7) :</label>
-            <input type="text" id="rounds" name="rounds">
-            </form><br> 
-            <button onclick="start()" id="button1" class="font-effect-anaglyph">Submit</button>
-        </div>
+      <img src="rockytop.png" class="top-left">
+      <img src="mt.png" class="bottom-right">
+      <div class="start">
+        <form>
+          <label for="players">Number of Players? (1-6) :</label>
+          <input type="text" id="players" name="players"><br><br>
+          <label for="rounds">Number of Rounds? (1-7) :</label>
+          <input type="text" id="rounds" name="rounds">
+        </form><br>
+        <button onclick="start()" id="button1" class="font-effect-anaglyph">Submit</button>
+      </div>
     </div>
 
     <div>
-    <details>
-        <summary class="guide font-effect-anaglyph";>Guidelines</summary>
-        <p><ol class="l1">
-        <li class="shrink"> Begin play after set-up </li>
-        <li class="shrink"> On each turn, the indicated player will get one dart </li>
-        <li class="shrink2"> Type the value of your throw into your box and hit next to input </li>
+      <details>
+        <summary class="guide font-effect-anaglyph" ;>Guidelines</summary>
+        <p>
+          <ol class="l1">
+            <li class="shrink"> Begin play after set-up </li>
+            <li class="shrink"> On each turn, the indicated player will get one dart </li>
+            <li class="shrink2"> Type the value of your throw into your box and hit next to input </li>
             <ul class="l2">
-                <li> A bullseye in the inner or outer ring is equal to 0 </li>
-                <li> A double point value means you get another throw </li>
-                <li> A triple point value means you get two more throws and can choose the better of the two </li>
+              <li> A bullseye in the inner or outer ring is equal to 0 </li>
+              <li> A double point value means you get another throw </li>
+              <li> A triple point value means you get two more throws and can choose the better of the two </li>
             </ul>
-        <li> To complete a round, you must reach its peak value </li>
+            <li> To complete a round, you must reach its peak value </li>
             <ul class="l2">
-                <li> Each round has a corresponding mountain peak from a continent (e.g. round one is Mt. Wilhelm at 14,000+ ft
-                     so you are aiming for a score of 14 </li>
+              <li> Each round has a corresponding mountain peak from a continent (e.g. round one is Mt. Wilhelm at 14,000+ ft
+                so you are aiming for a score of 14 </li>
             </ul>
-        <li> A throw less than the peak value is added to your tally and your turn is over </li>
-        <li> If you overshoot the peak value, your tally returns to 0 </li>
+            <li> A throw less than the peak value is added to your tally and your turn is over </li>
+            <li> If you overshoot the peak value, your tally returns to 0 </li>
             <ul class="l2">
-                <li> On your next turn, you can get a throw that reaches the peak value and complete the round </li>
-                <li> Regardless of the tally total, a throw equal to the peak value advances you to the next round </li>
-                <li> The same is true of a bullseye in the inner or outer rings </li>
+              <li> On your next turn, you can get a throw that reaches the peak value and complete the round </li>
+              <li> Regardless of the tally total, a throw equal to the peak value advances you to the next round </li>
+              <li> The same is true of a bullseye in the inner or outer rings </li>
             </ul>
-        <li> Completing all the peaks wins you the game!</li>    
-                </ol>
-                <p>
-                </details>
+            <li> Completing all the peaks wins you the game!</li>
+          </ol>
+          </p>
+      </details>
     </div>
-    
+
     <div class="back">
-    <div class="under">
-    <img src="curlybrace.png" class="brace">
-    <div class="msg">Player<span id="value1" class="excl"></span>'s turn</div>
-    <div id="value2" class="msg"></div>
-    </div>
-    <div class="el">
-    <div class="ind"><div id="P1" class="bold"></div><div id="R1"></div><div id="S1"></div><div id="I1" class="load"><input type="number" id="input1"></div></div>
-    <div class="ind"><div id="P2" class="bold"></div><div id="R2"></div><div id="S2"></div><div id="I2" class="load"><input type="number" id="input2"></div></div>
-    <div class="ind"><div id="P3" class="bold"></div><div id="R3"></div><div id="S3"></div><div id="I3" class="load"><input type="number" id="input3"></div></div>
-    <div class="ind"><div id="P4" class="bold"></div><div id="R4"></div><div id="S4"></div><div id="I4" class="load"><input type="number" id="input4"></div></div>
-    <div class="ind"><div id="P5" class="bold"></div><div id="R5"></div><div id="S5"></div><div id="I5" class="load"><input type="number" id="input5"></div></div>
-    <div class="ind"><div id="P6" class="bold"></div><div id="R6"></div><div id="S6"></div><div id="I6" class="load"><input type="number" id="input6"></div></div>
-    </div>
+      <div class="under">
+        <img src="curlybrace.png" class="brace">
+        <div class="msg" id="value1"></div>
+        <div id="value2" class="msg"></div>
+      </div>
+      <div class="el">
+        <div class="ind">
+          <div id="P1" class="bold"></div>
+          <div id="R1"></div>
+          <div id="S1"></div>
+          <div id="I1" class="load"><input type="number" id="input1"></div>
+        </div>
+        <div class="ind">
+          <div id="P2" class="bold"></div>
+          <div id="R2"></div>
+          <div id="S2"></div>
+          <div id="I2" class="load"><input type="number" id="input2"></div>
+        </div>
+        <div class="ind">
+          <div id="P3" class="bold"></div>
+          <div id="R3"></div>
+          <div id="S3"></div>
+          <div id="I3" class="load"><input type="number" id="input3"></div>
+        </div>
+        <div class="ind">
+          <div id="P4" class="bold"></div>
+          <div id="R4"></div>
+          <div id="S4"></div>
+          <div id="I4" class="load"><input type="number" id="input4"></div>
+        </div>
+        <div class="ind">
+          <div id="P5" class="bold"></div>
+          <div id="R5"></div>
+          <div id="S5"></div>
+          <div id="I5" class="load"><input type="number" id="input5"></div>
+        </div>
+        <div class="ind">
+          <div id="P6" class="bold"></div>
+          <div id="R6"></div>
+          <div id="S6"></div>
+          <div id="I6" class="load"><input type="number" id="input6"></div>
+        </div>
+      </div>
     </div>
     <div class="footer"><button onclick="next()" id="button2" class="font-effect-anaglyph">NEXT</button></div>
-    </body>
-    </html>
+  </body>
+
+</html>
+
