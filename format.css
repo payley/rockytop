@@ -9,14 +9,13 @@ body{
 .el{
   position:absolute;
   top: 200px;
-  left: 50px;
+  left: 5%;
   width: 30%;
   height: auto;
   font-size: 20pt;
   padding: 10px;
 }
 .load{
-  z-index: 3;
   padding: 2px;
   width: 100%
 }
@@ -25,7 +24,6 @@ body{
   padding-left: 4%;
   padding-top: 2%;
   float:left;
-  z-index: 2;
 }
 .bold{
   font-weight: 700;
