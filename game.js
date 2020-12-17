@@ -1,11 +1,10 @@
-document.getElementById("value1").innerHTML = "&nbsp" + "1";
 var init = document.getElementsByClassName("load");
 for (var i = 0; i < init.length; i++) {
     init[i].style.display = "none";
 }
 
-var p = 0;
-var r = 0;
+var p = 1;
+var r = 1;
 var turn = 1;
 var prev = 0;
 var pk = [14, 15, 16, 19, 20, 22, 29];
