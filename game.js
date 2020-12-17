@@ -79,7 +79,6 @@ function next() {
       document.getElementById("value1").innerHTML = "";
       document.getElementById("msg").innerHTML = "";
       document.getElementById("R" + (prev - 1)).innerHTML = "Round" + "&nbsp" + r + "/" + r;
-      document.getElementById("button2").disabled = true;
       }
   } else {
       document.getElementById("value1").innerHTML = "&nbsp" + turn;
