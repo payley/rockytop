@@ -9,8 +9,8 @@ body{
 .el{
   position:absolute;
   top: 200px;
-  left: 5%;
-  width: 30%;
+  left: 2%;
+  width: 40%;
   height: auto;
   font-size: 20pt;
   padding: 10px;
@@ -183,4 +183,13 @@ ul li{
   .guide {
     font-size: 24px;
   }
+  .el{
+  position:absolute;
+  top: 175px;
+  left: 2%;
+  width: 60%;
+  height: auto;
+  font-size: 20pt;
+  padding: 10px;
+}
 }
