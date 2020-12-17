@@ -1,10 +1,11 @@
+document.getElementsByClassName("value1").innerHTML= "&nbsp" + 4;
 var init = document.getElementsByClassName("load");
 for (var i = 0; i < init.length; i++) {
     init[i].style.display = "none";
 }
 
-var p = 1;
-var r = 1;
+var p = 0;
+var r = 0;
 var turn = 1;
 var prev = 0;
 var pk = [14, 15, 16, 19, 20, 22, 29];
@@ -78,7 +79,7 @@ function next() {
       document.getElementById("value1").innerHTML = "";
       document.getElementById("msg").innerHTML = "";
       document.getElementById("R" + (prev - 1)).innerHTML = "Round" + "&nbsp" + r + "/" + r;
-      }
+      document.getElementById("button2").disabled = true;
   } else {
       document.getElementById("value1").innerHTML = "&nbsp" + turn;
   }
