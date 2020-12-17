@@ -75,11 +75,11 @@ function next() {
         turn = 1;
     }
   if(rnd[abs] > r){
-      document.getElementById("value2").innerHTML = "Player" + "&nbsp" + (prev) + "&nbsp" + "wins!";
+      document.getElementById("value2").innerHTML = "Player" + "&nbsp" + (prev-1) + "&nbsp" + "wins!";
       document.getElementById("value1").innerHTML = "";
+      document.getElementById("msg").innerHTML = "";
       document.getElementById("R" + (prev - 1)).innerHTML = "Round" + "&nbsp" + r + "/" + r;
-      function disableButton(button2){
-		document.getElementById(btn.id).disabled = true;
+      document.getElementById("button2").disabled = true;
       }
   } else {
       document.getElementById("value1").innerHTML = "&nbsp" + turn;
