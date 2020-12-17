@@ -70,12 +70,17 @@ function next() {
     }
     document.getElementById("input" + turn).value = "";
     turn = turn + 1;
+    prev = turn;
     if (turn > p) {
         turn = 1;
     }
   if(rnd[abs] > r){
-      document.getElementById("value2").innerHTML = "Player" + "&nbsp" + (turn - 1) + "&nbsp" + "wins!";
-      document.getElementById("R" + (turn - 1)).innerHTML = "Round" + "&nbsp" + r + "/" + r;
+      document.getElementById("value2").innerHTML = "Player" + "&nbsp" + (prev) + "&nbsp" + "wins!";
+      document.getElementById("value1").innerHTML = "";
+      document.getElementById("R" + (prev - 1)).innerHTML = "Round" + "&nbsp" + r + "/" + r;
+      function disableButton(button2){
+		document.getElementById(btn.id).disabled = true;
+      }
   } else {
       document.getElementById("value1").innerHTML = "&nbsp" + turn;
   }
