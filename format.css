@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&effect=anaglyph');
-body{
-  font-family:"Montserrat", sans-serif;
+
+body {
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
-.el{
-  position:absolute;
+
+.el {
+  position: absolute;
   top: 200px;
   left: 2%;
   width: 35%;
@@ -15,22 +17,26 @@ body{
   font-size: 20pt;
   padding: 10px;
 }
-.load{
+
+.load {
   padding-bottom: 20px;
-  width: 100%
+  width: 100%;
 }
-.ind>*{
+
+.ind > * {
   padding-right: 7%;
   padding-left: 4%;
   padding-top: 1px;
-  float:left;
+  float: left;
 }
-.bold{
+
+.bold {
   font-weight: 700;
 }
-.back{
+
+.back {
   position: relative;
-  background-color:lightblue;
+  background-color: lightblue;
   right: 0;
   left: 0;
   width: 100%;
@@ -39,18 +45,21 @@ body{
   border: 0;
   padding-bottom: 75px;
 }
-.under{
+
+.under {
   width: 30%;
   position: absolute;
   top: 50px;
   left: 85px;
 }
-.brace{
+
+.brace {
   position: relative;
   width: 100%;
   object-fit: scale-down;
 }
-.msg{
+
+.msg {
   position: absolute;
   top: 50%;
   width: 50%;
@@ -59,59 +68,68 @@ body{
   text-align: center;
   transform: translate(50%, -50%);
 }
+
 input[type=text] {
-    width: 8%;
-    border: none;
-    border-bottom: 2px solid maroon;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+  width: 8%;
+  border: none;
+  border-bottom: 2px solid maroon;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
+
 input[type=number] {
-    width: 100%;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    border: 1px solid black;
-    text-align: center;
-    padding: 10px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
 }
+
 :focus {
-   border: none;
-   outline: none;
+  border: none;
+  outline: none;
 }
+
 button {
-   outline: none;
+  outline: none;
 }
+
 #button1 {
-    background: maroon;
-    border:  none;
-    padding:  10px;
-    color: white;
-    letter-spacing: 1px;
-    font-size: 20px;
-    font-weight: 700;
+  background: maroon;
+  border: none;
+  padding: 10px;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 700;
 }
+
 #button1:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
 #button2 {
-    background: maroon;
-    border:  none;
-    padding:  10px;
-    color: white;
-    font-size: 36px;
-    font-weight: 900;
-    letter-spacing: 3px;
-    border-radius: 3px;
-    position: relative;
-    top: 50%;
-    left: 50%;
+  background: maroon;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  border-radius: 3px;
+  position: relative;
+  top: 50%;
+  left: 50%;
 }
+
 #button2:hover {
-    color: black;
+  color: black;
 }
+
 .start {
   font-weight: 500;
   position: absolute;
@@ -121,75 +139,89 @@ button {
   text-align: right;
   z-index: 2;
 }
-details{
+
+details {
   padding-left: 20px;
 }
-.guide{
-    font-size: 28px;
-    font-weight: 900;
-    padding-left: 20px;
-    padding-top: 0px;
+
+.guide {
+  font-size: 28px;
+  font-weight: 900;
+  padding-left: 20px;
+  padding-top: 0px;
 }
-.l1{
-    font-size: 18px;
-    width: 60%;
+
+.l1 {
+  font-size: 18px;
+  width: 60%;
 }
-.l2{
-    font-size: 17px;
-    list-style-type: square;
+
+.l2 {
+  font-size: 17px;
+  list-style-type: square;
 }
-ol li{
-      line-height: 100%;
-      margin-top: 20px;
-    }
-ol li.shrink{
-      width: 70%;
-    }
-ol li.shrink2{
-      width: 90%;
-    }
-ul li{
-      line-height: 110%;
-      margin-bottom: 0px;
-    }
+
+ol li {
+  line-height: 100%;
+  margin-top: 20px;
+}
+
+ol li.shrink {
+  width: 70%;
+}
+
+ol li.shrink2 {
+  width: 90%;
+}
+
+ul li {
+  line-height: 110%;
+  margin-bottom: 0px;
+}
+
 .bottom-right {
-    position: absolute;
-    top: 175px;
-    left: 37%;
-    width: 63%;
-    height: auto;
-    z-index: 1;
+  position: absolute;
+  top: 175px;
+  left: 37%;
+  width: 63%;
+  height: auto;
+  z-index: 1;
 }
+
 .top-left {
-    padding:  25px;
-    width: 50%;
-    max-width: 704px;
+  padding: 25px;
+  width: 50%;
+  max-width: 704px;
 }
+
 .footer {
-    background: maroon;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 2;
+  background: maroon;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
+
 @media only screen and (max-aspect-ratio: 4/3) {
   .start {
     top: 20px;
     right: 40px;
     font-size: 16px;
   }
+
   .guide {
     font-size: 24px;
   }
-  .el{
-  position:absolute;
-  top: 175px;
-  left: 2%;
-  width: 60%;
-  height: auto;
-  font-size: 20pt;
-  padding: 10px;
-}
+
+  .el {
+    position: absolute;
+    top: 175px;
+    left: 2%;
+    width: 60%;
+    height: auto;
+    font-size: 20pt;
+    padding: 10px;
+  }
 }
