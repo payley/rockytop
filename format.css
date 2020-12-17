@@ -16,13 +16,13 @@ body{
   padding: 10px;
 }
 .load{
-  padding-bottom: 4px;
+  padding-bottom: 5px;
   width: 100%
 }
 .ind>*{
   padding-right: 7%;
   padding-left: 4%;
-  padding-top: 2%;
+  padding-top: 1px;
   float:left;
 }
 .bold{
