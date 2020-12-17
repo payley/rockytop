@@ -9,15 +9,15 @@ body{
 .el{
   position:absolute;
   top: 200px;
-  left: 100px;
-  width: 50%;
+  left: 50px;
+  width: 30%;
   height: auto;
   font-size: 20pt;
   padding: 10px;
 }
 .load{
   z-index: 3;
-  padding: 10px;
+  padding: 2px;
   width: 100%
 }
 .ind>*{
