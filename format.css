@@ -10,13 +10,13 @@ body{
   position:absolute;
   top: 200px;
   left: 2%;
-  width: 40%;
+  width: 35%;
   height: auto;
   font-size: 20pt;
   padding: 10px;
 }
 .load{
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   width: 100%
 }
 .ind>*{
